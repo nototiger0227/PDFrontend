@@ -39,7 +39,7 @@ const InvestorDashboard = () => {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-4xl font-bold text-white mb-6 text-center">Current Trends</h2>
+        <h2 className="text-4xl font-bold text-white mb-6 text-center">Trending Topics</h2>
         <div className="bg-white p-6 rounded-2xl shadow-lg">
           {trends.map((trend, index) => (
             <motion.p

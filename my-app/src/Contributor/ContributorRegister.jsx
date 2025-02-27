@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
-const InvestorLogin = () => {
-  const handleLogin = () => {
-    console.log('Investor Login');
+const ContributorRegister = () => {
+  const handleRegister = () => {
+    console.log('Contributor Register');
   };
 
   return (
@@ -14,7 +14,7 @@ const InvestorLogin = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Investor Login
+        Contributor Register
       </motion.h1>
       <motion.div
         className="bg-white p-8 rounded-2xl shadow-2xl text-center w-96"
@@ -22,12 +22,13 @@ const InvestorLogin = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
+        <input type="text" placeholder="Name" className="w-full p-2 mb-4 border rounded" />
         <input type="email" placeholder="Email" className="w-full p-2 mb-4 border rounded" />
         <input type="password" placeholder="Password" className="w-full p-2 mb-6 border rounded" />
-        <Button onClick={handleLogin} className="bg-blue-600 text-white hover:bg-blue-700 w-full">Login</Button>
+        <Button onClick={handleRegister} className="bg-blue-600 text-white hover:bg-blue-700 w-full">Register</Button>
       </motion.div>
     </div>
   );
 };
 
-export default InvestorLogin;
+export default ContributorRegister;

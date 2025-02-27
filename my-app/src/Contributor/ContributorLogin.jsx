@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
-const InvestorLogin = () => {
+const ContributorLogin = () => {
   const handleLogin = () => {
-    console.log('Investor Login');
+    console.log('Contributor Login');
   };
 
   return (
@@ -14,7 +14,7 @@ const InvestorLogin = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Investor Login
+        Contributor Login
       </motion.h1>
       <motion.div
         className="bg-white p-8 rounded-2xl shadow-2xl text-center w-96"
@@ -30,4 +30,4 @@ const InvestorLogin = () => {
   );
 };
 
-export default InvestorLogin;
+export default ContributorLogin;

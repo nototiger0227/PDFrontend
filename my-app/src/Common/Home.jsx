@@ -1,9 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import Navbar from "/components/Navbar";
+import Footer from "/components/Footer"
 
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 p-6 text-center">
+      <Navbar />
       <motion.h1 
         className="text-5xl font-bold text-white mb-8"
         initial={{ opacity: 0, y: -50 }}
@@ -56,6 +59,7 @@ const Home = () => {
           <li>Community-driven networking</li>
         </ul>
       </motion.div>
+      <Footer />
     </div>
   );
 };

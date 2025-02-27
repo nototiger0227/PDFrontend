@@ -10,7 +10,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Welcome to Startup Connect
+        Welcome to PitchDeck
       </motion.h1>
       <motion.p 
         className="text-lg text-white mb-10"
